@@ -1,24 +1,34 @@
-name: YourName
+name: My Safe Haven
 permalink: :year/:month/:day/:title
-baseurl: /jekyll-theme-diary
+baseurl: /diary
 
 # Your blog's start year and this year, showed in the footer left
 # start is optional
-start: 2017
-now: 2019
+start: 2021
+now: 2022
  
 # Social links showed in the footer
 # You just need modify the nickname of github and twitter
 link:
-  email : yourname@gmail.com
-  github : yourname
-  twitter : yourname
+  #email : yourname@gmail.com
+  github : Aspiring-Writer
+  #twitter : yourname
 
 # Links in the navigation, you can modify both link name and link url
 nav:
-   Home: "/"
-   Diary: "/diary"
+  Blog: "/"
+  Diary: "/diary"
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
    
 markdown: kramdown
 highlighter: rouge
@@ -26,3 +36,4 @@ highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
+# Colors can be changed in `_sass/predefine.scss`
